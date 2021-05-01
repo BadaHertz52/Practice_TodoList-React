@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+React만을 사용한 Todo list 만들기 
+=======================================
+*__해당 코드들은 [리액트 강의 내용]( https://react.vlpt.us/mashup-todolist/)을 실습한 것들입니다.__*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Todo list 설명 
+----------------------------------------------------------------------------
 
-In the project directory, you can run:
+### TodoProvider 
+  useReducer 와 context를 사용하여 state와 dispatch를 다른 컴포넌트들에게 전달하고 state 나 dispatch가 업는 에러 상황에서 에러문구를 생성하는 기능을 구현하는 컴포넌트입니다. 
 
-### `yarn start`
+### TodoTemplate 
+  Todo list의 전체적인 레이아웃을 구현하는 컴포넌트입니다. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### TodoHead 
+  현재 사용자가 거주하는 곳의 날짜, 시간을 한국식 표기방식으로 보여주고 todo list 중에서 해야할 목록으로 설정된 목록의 갯수를 보여주는 역할을 담당하는 컴포넌트 입니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### TodoList 
+  TodoListBlock 컴포넌트 안에 시행여부를 체크하는 부분, 할일에 대한 내용을 담은 부분, 할일 목록을 삭제하는 부분으로 이루어진 TodoItem 컴포넌트들이 있는 구성 방식입니다. 
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### TodoCreate 
+  사용자가 버튼을 누르면 새로운 할 일 목록을 작성하고 이를 업도르할 수 있게 해주는 기능을 담당하는 컴포넌트입니다. 
